@@ -1,4 +1,4 @@
-# app_lgpd
+# Suporte LGPD App
 
 Projeto da Disciplina PGIA 7310 - Fundamentos de Informática Aplicada - UFRPE
 
