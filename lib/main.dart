@@ -29,7 +29,7 @@ class PrimeiraRota extends StatelessWidget {
                                                 ConstrainedBox(
                                                         constraints: BoxConstraints.tightFor(width: 300, height: 100),
                                                         child: ElevatedButton(
-                                                                child: Text('CONTROLADORES'),
+                                                                child: Text('CONTROLADOR'),
                                                                 onPressed: () {
                                                                         Navigator.push(
                                                                                 context,
@@ -49,7 +49,7 @@ class PrimeiraRota extends StatelessWidget {
                                                 ConstrainedBox(
                                                         constraints: BoxConstraints.tightFor(width: 300, height: 100),
                                                         child: ElevatedButton(
-                                                                child: Text('USUÁRIOS'),
+                                                                child: Text('USUÁRIO'),
                                                                 onPressed: () {
                                                                         Navigator.push(
                                                                                 context,
@@ -108,7 +108,7 @@ class TeladeLogin extends StatelessWidget {
                                                                         Navigator.push(
                                                                                 context,
                                                                                 MaterialPageRoute(
-                                                                                    builder: (context) => TeladeLogin()),
+                                                                                    builder: (context) => Controlador()),
                                                                         );
                                                                 },
                                                                 style: ButtonStyle(
@@ -126,3 +126,78 @@ class TeladeLogin extends StatelessWidget {
         }
 }
 
+class Controlador extends StatelessWidget {
+        @override
+        Widget build(BuildContext context) {
+                return Scaffold(
+                        appBar: AppBar(
+                                title: Text("Trilha de Implementação da LGPD"),
+                        ),
+                        drawer: Drawer(),
+                        body: Center(
+                                child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                                ConstrainedBox(
+                                                        constraints: BoxConstraints.tightFor(width: 300, height: 100),
+                                                        child: ElevatedButton(
+                                                                child: Text('Definição de Papéis e Responsabilidades'),
+                                                                onPressed: () {
+                                                                        Navigator.push(
+                                                                                context,
+                                                                                MaterialPageRoute(
+                                                                                    builder: (context) => Controlador()),
+                                                                        );
+                                                                },
+                                                                style: ButtonStyle(
+                                                                    backgroundColor:
+                                                                    MaterialStateProperty.all(Colors.blueAccent),
+                                                                    padding: MaterialStateProperty.all(EdgeInsets.all(20)),
+                                                                    textStyle:
+                                                                    MaterialStateProperty.all(TextStyle(fontSize: 20))),
+                                                        ),
+                                                ),
+                                                ConstrainedBox(
+                                                        constraints: BoxConstraints.tightFor(width: 300, height: 100),
+                                                        child: ElevatedButton(
+                                                                child: Text('Roadmap'),
+                                                                onPressed: () {
+                                                                        Navigator.push(
+                                                                                context,
+                                                                                MaterialPageRoute(
+                                                                                    builder: (context) => Controlador()),
+                                                                        );
+                                                                },
+                                                                style: ButtonStyle(
+                                                                    backgroundColor:
+                                                                    MaterialStateProperty.all(Colors.blueAccent),
+                                                                    padding: MaterialStateProperty.all(EdgeInsets.all(28)),
+                                                                    textStyle:
+                                                                    MaterialStateProperty.all(TextStyle(fontSize: 20))),
+                                                        ),
+                                                ),
+                                                ConstrainedBox(
+                                                        constraints: BoxConstraints.tightFor(width: 300, height: 100),
+                                                        child: ElevatedButton(
+                                                                child: Text('Programa de Conscientização'),
+                                                                onPressed: () {
+                                                                        Navigator.push(
+                                                                                context,
+                                                                                MaterialPageRoute(
+                                                                                    builder: (context) => Controlador()),
+                                                                        );
+                                                                },
+                                                                style: ButtonStyle(
+                                                                    backgroundColor:
+                                                                    MaterialStateProperty.all(Colors.blueAccent),
+                                                                    padding: MaterialStateProperty.all(EdgeInsets.all(28)),
+                                                                    textStyle:
+                                                                    MaterialStateProperty.all(TextStyle(fontSize: 20))),
+                                                        ),
+                                                ),
+                                        ],
+                                ),
+                        ),
+                );
+        }
+}
