@@ -11,6 +11,9 @@ Este é um projeto de aplicativo para oferecer suporte à implementação da LGP
 ## Vídeo Simulando Navegação das Telas Iniciais
 https://youtu.be/u_4525YgxTA
 
+## Vídeo de Apresentação do Aplicativo (Pitch)
+https://youtu.be/OL8kf2FTbxc
+
 ## Widget Trees Iniciais
 ![Widget Trees Inicial.png](assets/imagens/Widget%20Trees%20Inicial.png)
 
